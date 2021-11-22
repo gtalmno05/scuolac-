@@ -30,6 +30,16 @@ if (numero<=9999){
 }
 	}
 	}
+			else cout<<"Inserire un numero compreso tra 1000 e 9999 :\n";
+	scanf("%d",&numero);{
+	if (numero<=9999){
+	if (numero>=1000){
+				while (numero>0){
+				printf("%d\n",numero%10);
+				numero = numero/10;
+}
+	}
+	}
 }
 }
 return 0;
