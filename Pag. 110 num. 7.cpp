@@ -1,4 +1,5 @@
 
+
 #include <iostream>
 
 using namespace std;
@@ -42,5 +43,7 @@ if (numero<=9999){
 	}
 }
 }
+}
+system("pause");
 return 0;
 }
