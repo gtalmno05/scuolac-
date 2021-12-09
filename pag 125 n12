@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	cout<<"\t"<<"questo programma "<<endl;
+	
+	//variabili
+	float sct10;
+	float sct20;
+	float imp;
+	float r;
+	float diff;
+	float sct;
+	float impdp;
+	
+	
+	//input dati
+	cout<<"inserisci l'importo totale: ";
+	cin>>imp;
+	
+	//calcolo
+	if (imp>300)
+	{
+		r=imp-300;
+		diff=imp-r;
+		sct10=(diff*10)/100;
+		sct20=(r*20)/100;
+		
+		//risposta
+	}
+	
+	system("pause");
+	return 0;
+}
