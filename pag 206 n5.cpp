@@ -24,7 +24,7 @@ int main(void)
 			{
 				case 1:
 			
-					num= coppiednumugual ();
+					num= coppiednumugual ()
 			
 					break;
 				
