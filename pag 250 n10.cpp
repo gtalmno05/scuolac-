@@ -6,19 +6,18 @@ using namespace std;
 
 //variabili globali
 int nv;
-int v[10];
+int v[15];
 
+int numeriarray();
 int ordinearray(int sceltaord);
 int arraycasuale();
 int sceltaordine(int &sceltaord);
 int sceltatipologia(int &sceltatip);
-int numeritot(int &nv);
 int main()
 {
 	int n;
 	int sceltatip;
 	int sceltaord;
-	int v[nv];
 	
 	sceltatipologia(sceltatip);
 	
@@ -26,7 +25,6 @@ int main()
 	{
 		case 0:
 			
-			numeritot(nv);
 			arraycasuale();
 			sceltaordine(sceltaord);
 			
@@ -34,13 +32,15 @@ int main()
 			{
 				case 0:
 					
+					system("cls");
 				ordinearray(sceltaord);	
 					
 				break;
 		
 				case 1:
 					
-					
+					system("cls");
+					ordinearray(sceltaord);	
 					
 				break;
 			}
@@ -49,20 +49,22 @@ int main()
 		
 		case 1:
 			
-			
+			numeriarray();
 			sceltaordine(sceltaord);
 			
 			switch(sceltaord)
 			{
 				case 0:
 					
-					
+					system("cls");
+					ordinearray(sceltaord);	
 					
 				break;
 					
 				case 1:
 					
-					
+					system("cls");
+					ordinearray(sceltaord);	
 					
 				break;
 			}
@@ -70,16 +72,6 @@ int main()
 		break;
 		
 	}
-}
-
-int numeritot(int &nv)
-{
-	
-	cout<<"inserisci il totale dei numeri che vuoi: ";
-	cout<<"\n";
-	cin>>nv;
-	cout<<"\n";
-	
 }
 
 int sceltatipologia(int &sceltatip)
@@ -111,7 +103,7 @@ int arraycasuale()
 	for(i=0;i<nv;i++)
 	{
 		
-		v[i]=(rand()%nv);
+		v[i]=(rand()%100);
 		
 	}
 	
@@ -125,7 +117,7 @@ int ordinearray(int sceltaord)
 		
 		case 0:
 			
-			for(i=0;i>nv;i--)
+			for(i=0;i>15;i++)
 			{
 				
 				cout<<v[i]<<endl;
@@ -136,10 +128,30 @@ int ordinearray(int sceltaord)
 		
 		case 1:
 			
-			
+			for(i=14;i>=0;i--)
+			{
+				
+				cout<<v[i]<<endl;
+				
+			}
 			
 		break;
 		
 	}
 	
+}
+
+int numeriarray()
+{
+	int n;
+	int i;
+	
+	for(i=0;i<15;i++)
+	{
+		cout<<"Inserisci un numero: ";
+		cin>>n;
+		cout<<"\n";
+		
+		v[i]=n;
+	}
 }
