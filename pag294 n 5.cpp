@@ -26,14 +26,14 @@ int main()
 	cout<<"\n";
 	cout<<"--------";
 	cout<<"\n";
-	bubblesortpos();
+	//bubblesortpos();
 	cout<<"numeri positivi: ";
 	cout<<"\n";
 	mostravettorepos();
 	cout<<"\n";
 	cout<<"--------";
 	cout<<"\n";
-	bubblesortneg();
+	//bubblesortneg();
 	cout<<"numeri negativi: ";
 	cout<<"\n";
 	mostravettoreneg();
