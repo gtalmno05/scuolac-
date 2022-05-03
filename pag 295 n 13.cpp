@@ -3,9 +3,9 @@
 using namespace std;
 
 //variabili globali
-const int max=10;
-int v[max];
-string v1[max];
+const int mass=10;
+int v[mass];
+string v1[mass];
 
 int maggiorenni();
 int leggidati();
@@ -20,7 +20,7 @@ int leggidati()
 	
 	int i;
 	
-	for(i=0;i<max;i++)
+	for(i=0;i<mass;i++)
 	{
 		cout<<"Inserisci il nome:";
 		cin>>v1[i];
@@ -37,11 +37,11 @@ int maggiorenni()
 	//variabili
 	int i;
 	
-	for(i=0;i<max;i++)
+	for(i=0;i<mass;i++)
 	{
 		if(v[i]>=18)
 		{
-			cout<<v1[i]<<v[i] <<"posizione "<<"["<<i<<"]"<<endl;
+			cout<<v1[i]<<" "<<v[i]<<" "<<"posizione "<<" "<<"["<<i<<"]"<<endl;
 		}
 	}
 	
